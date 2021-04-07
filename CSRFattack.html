@@ -1,0 +1,16 @@
+<html>
+<head></head>
+<body>
+<fieldset>
+    <legend>New Categories</legend>
+    <form id="cat_insert" method="POST" action="https://secure.s10.ierg4210.ie.cuhk.edu.hk/admin-process.php?action=cat_insert"
+          enctype="multipart/form-data">
+        <label for="cat_name">Name *</label>
+        <div><input id="cat_name" type="text" name="cat_name" required="true"
+                    pattern="^[\w\- ]+$" /></div>
+        <input type="hidden" name="token" value="123" />
+        <input type="submit" value="Submit" />
+    </form>
+</fieldset>
+</body>
+</html>
